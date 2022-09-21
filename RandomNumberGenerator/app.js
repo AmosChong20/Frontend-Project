@@ -1,4 +1,6 @@
 let number = 0;
+let min_value = null;
+let max_value = null;
 
 const value = document.querySelector("#value");
 const btn_generate = document.querySelector(".btn-generate");
@@ -8,8 +10,8 @@ const input = document.getElementsByTagName("input");
 
 //When clicked submit button, min_value and max_value will be recorded
 btn_submit.addEventListener('click', function (e) {
-    const min_value = document.getElementById("min_value").value;
-    const max_value = document.getElementById("max_value").value;
+    min_value = document.getElementById("min_value").value;
+    max_value = document.getElementById("max_value").value;
     if (min_value != "" && max_value != "")
         message.textContent = "Submitted!";
     
